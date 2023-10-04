@@ -47,7 +47,7 @@ h1 {
     align-items: center;
     font-family: 'Tilt Warp', cursive;
     font-size: 45px;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 ul {
@@ -57,23 +57,64 @@ ul {
 a {
     text-decoration: none;
     color: var(--blanco2);
+    padding: 5px 7px 5px 7px;
+    border-radius: 5px;
 }
 
 nav > ul{
     display: flex;
     justify-content: space-evenly;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-variant: inherit;
+    font-family: Helvetica, sans-serif;
     /* font-family: 'Tilt Warp', cursive; */
     border: 4px solid var(--celeste);
     border-radius: 0 0 10px 10px;
-    padding: 10px;
+    padding: 25px;
     margin-top: -4px;
     background-color: var(--celeste);
 }
 
-.submenu1 > li {
-    padding-top: 15px;
+.menu {
+    position: relative;
+    z-index: 100;
 }
+
+.menu li a:hover{
+    
+    background-color: var(--blanco2);
+    color: var(--azul_claro);
+    
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.submenu1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    border-radius: 10px;
+}
+
+.submenu1 li a {
+    display: block;
+    padding: 10px;
+
+}
+/* Haciendo el menú desplegable */
+.menu li:hover .submenu1 {
+    visibility: visible;
+    opacity: 1;
+    background: var(--gris);
+    color: var(--azul_claro);
+}
+
+/* ------ FIN DE ESTILOS NAVBAR Y HEADER ----- */
+/* ******************************************* */
 
