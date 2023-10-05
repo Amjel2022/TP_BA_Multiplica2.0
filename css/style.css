@@ -19,22 +19,22 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-image: url("../imagenes/fondo2.png");
 }
 
 header {
-    border: 4px solid var(--blanco1);
+    border: 4px solid var(--blanco2);
     border-radius: 10px 10px 0 0;
     margin-top: auto;
-    background-color: #ffff;
+    background-color: var(--blanco2);
 }
 
 .encabezado {
     display: flex;
     flex-direction: row;
-
 }
 
-img {
+.logo {
     width: 130px;
     height: auto;
     margin: 0px 0px 0px 30px;
@@ -58,7 +58,7 @@ a {
     text-decoration: none;
     color: var(--blanco2);
     padding: 5px 7px 5px 7px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 nav > ul{
@@ -80,10 +80,8 @@ nav > ul{
 }
 
 .menu li a:hover{
-    
     background-color: var(--blanco2);
     color: var(--azul_claro);
-    
 }
 
 .menu li:hover {
@@ -91,14 +89,15 @@ nav > ul{
     transition: 0.5s;
 }
 
+/* Haciendo el menú desplegable */
 .submenu1 {
     display: flex;
     flex-direction: column;
-    padding: 10px 0 10px 0;
+    padding: 10px 20px 10px 20px;
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1.5s;
+    transition: opacity 1s;
     border-radius: 10px;
 }
 
@@ -107,7 +106,7 @@ nav > ul{
     padding: 10px;
 
 }
-/* Haciendo el menú desplegable */
+
 .menu li:hover .submenu1 {
     visibility: visible;
     opacity: 1;
@@ -117,4 +116,79 @@ nav > ul{
 
 /* ------ FIN DE ESTILOS NAVBAR Y HEADER ----- */
 /* ******************************************* */
+
+/* ---------------- CONTENIDO ---------------- */
+/* Imagen de la home - (posible slider) */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.img_home {
+    width: 700px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: 15px 40px 15px 40px;
+    background-color: var(--blanco2);
+    border-radius: 8px;
+    padding: 35px 0 35px 35px;
+}
+
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.texto1 p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: -40px 20px 25px 0px;
+    padding: 30px;
+}
+
+h3 {
+    color: var(--azul);
+    font-family: 'Tilt Warp', cursive;
+    font-size: 40px;
+}
+
+.btn1 {
+    margin-top: -20px;
+    padding: 8px 10px 8px 10px;
+    border: 3px solid var(--azul);
+    border-radius: 20px;
+    background: var(--blanco2);
+}
+
+.btn1 a {
+    color: var(--azul);
+    font-size: 15px;
+    
+}
+
+.btn1:hover {
+    background: var(--azul);
+    border: 4px solid var(--azul);
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+.btn1 a:hover {
+    color: var(--blanco2);
+    font-weight: bolder;
+}
+
+/* ------------- CARDS --------------- */
+/* *********************************** */
+
 
