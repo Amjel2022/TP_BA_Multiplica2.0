@@ -61,6 +61,11 @@ a {
     border-radius: 8px;
 }
 
+/* INVESTIGAR SOBRE PROPIEDAD STICKY */
+/* nav {
+    position: sticky;
+} */
+
 nav > ul{
     display: flex;
     justify-content: space-evenly;
@@ -103,7 +108,7 @@ nav > ul{
 
 .submenu1 li a {
     display: block;
-    padding: 10px;
+    padding: 9px;
 
 }
 
@@ -122,6 +127,7 @@ nav > ul{
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 .img_home {
@@ -134,18 +140,16 @@ main {
     display: flex;
     justify-content: center;
     width: 85%;
-    margin: 15px 40px 15px 40px;
+    margin: auto auto;
     background-color: var(--blanco2);
     border-radius: 8px;
-    padding: 35px 0 35px 35px;
+    padding: 35px 35px 35px 35px;
 }
 
 .texto1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
 
 .texto1 p {
@@ -191,4 +195,50 @@ h3 {
 /* ------------- CARDS --------------- */
 /* *********************************** */
 
+.container {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.card {
+    width: 350px;
+    height: auto;
+    background: var(--blanco2);
+    margin: 60px 10px 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 25px 20px;
+}
+
+.img_card {
+    width: 320px;
+    border-radius: 10px;
+    margin: -30px 0 0 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.img_card:hover{
+    scale: 1.1;
+    transition: 1s;
+    cursor: pointer;
+}
+
+h4 {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--azul);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.card p {
+    margin: -25px 8px 45px 8px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
 
