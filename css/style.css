@@ -62,6 +62,9 @@ a {
     border-radius: 8px;
 }
 
+nav {
+    position: sticky;
+}
 /* INVESTIGAR SOBRE PROPIEDAD STICKY */
 /* nav {
     position: sticky;
@@ -290,24 +293,6 @@ h4 {
 /* Hecho con: "https://cssgrid-generator.netlify.app/" */
 /* ********************************************* */
 
-.menu_categorias {
-    display: flex; 
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-aside {
-    background: var(--blanco2);
-    margin: 20px 0 20px 0;
-    border-radius: 10px;
-}
-
-.img_calendario {
-    width: 350px;
-    height: auto;
-}
-
 /* ******************************************* */
 /*  ----------- FOOTER ----------- */
 /* Para probar, despues con más tiempo se puede mejorar  */
@@ -342,5 +327,77 @@ h2 {
     display: flex;
     justify-content: center;
     color: var(--blanco2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
+
+/* **************************************** */
+/* --------- LATERAL (aside) -------------- */
+/* **************************************** */
+
+aside {
+    background: var(--blanco2);
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+}
+
+.calendario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img_calendario {
+    width: 350px;
+    height: auto;
+    margin: 25px;
+}
+
+h5 {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 10px 10px 30px;
+    font-size: 25px;
+    font-family: 'Tilt Warp', cursive;
+    color: var(--azul);   
+}
+
+input {
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    margin: 0 0 10px 30px;
+    padding: 8px 50px 8px 8px;
+}
+
+input:hover {
+    border: 3px solid var(--azul_claro);
+    cursor: text;
+}
+
+.btn_buscar {
+    padding: 4px;
+    font-size: 15px; 
+    margin: 2px 0 0 10px;
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    background-color: var(--blanco2); 
+}
+
+.btn_buscar:hover {
+    border: 3px solid var(--azul_claro);
+    background-color: var(--blanco1);
+    cursor: pointer;
+}
+
+.menu_categorias > a {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--azul_claro);
+    font-family: Helvetica, sans-serif;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* *************************************** */
+/* -------- DISEÑO RESPONSIVE ------------ */
+/* *************************************** */
 
