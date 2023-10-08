@@ -62,13 +62,13 @@ a {
     border-radius: 8px;
 }
 
-nav {
+/* ********** Navbar sticky!! ********* */
+.navbar {
     position: sticky;
+    top: 0;
+    z-index: 200;
 }
-/* INVESTIGAR SOBRE PROPIEDAD STICKY */
-/* nav {
-    position: sticky;
-} */
+/* ************************************ */
 
 nav > ul{
     display: flex;
