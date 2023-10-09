@@ -205,6 +205,7 @@ h3 {
     margin: 20px 30px 20px 0;
     border-radius: 10px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 20px 15px 20px 30px;
@@ -298,10 +299,10 @@ h4 {
 /* Para probar, despues con más tiempo se puede mejorar  */
 
 footer {
-    height: 200px;
-    background-color: var(--gris);
-    display: flex;
-    flex-direction: column;
+    height: 215px;
+    background-image: url("../imagenes/ola.svg");
+    position: relative;
+    bottom: 0;
     margin: 10px 5px -10px 5px;
     border-radius: 10px 10px 0 0;
 }
