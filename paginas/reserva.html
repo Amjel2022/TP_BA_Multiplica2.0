@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Warp&display=swap" rel="stylesheet">
     <!-- link del icono -->
     <link rel="icon" href="../Imagenes/logo.png">
+    <!-- LINK DE BOOTSTRAP -->
+    <link rel="stylesheet" href="./bootstrap-5.3.2/css/bootstrap.min.css">
+
 </head>
 <body>
     <!-- Encabezado y logo -->
@@ -49,6 +52,28 @@
         </ul>        
     </nav>
 
+    <main>
+
+        <div class="row">
+            <!-- columna 1 Bootstrap -->
+            <div class="col-3"></div>
+            <div class="col-6" style="background-color: var(--gris);">
+                <h2 class="text-center">Reserva de clases</h2>
+                <form action="##archivo_destino" method="##post(php)">
+                    <!-- Nombre del usuario -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" placeholder="Ingrese su nombre" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-3"></div>
+
+        </div>
+
+    </main>
+
     <!-- FOOTER -->
     <footer>
         <h2>Sigamos conectados</h2>
@@ -60,5 +85,9 @@
         </div>
         <p class="copyright">Copyright &copy; Angeloz Diseño 2023</p>
     </footer>
+
+    <!-- ********** JS DE BOOTSTRAP *********** -->
+    <script src="./bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>
