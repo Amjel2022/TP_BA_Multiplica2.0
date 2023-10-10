@@ -402,3 +402,47 @@ input:hover {
 /* -------- DISEÑO RESPONSIVE ------------ */
 /* *************************************** */
 
+
+
+
+
+
+
+/* ************************************ */
+/* ------- PAGINA DE RESERVAS --------- */
+/* ************************************ */
+
+/* logo de la pagina en el encabezado */
+.logo2 {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;   
+}
+
+.titulo_reserva {
+    color: var(--azul);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_reserva {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--blanco2);
+    margin: 25px auto 25px auto;
+    
+}
+
+.encabezado_reserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
