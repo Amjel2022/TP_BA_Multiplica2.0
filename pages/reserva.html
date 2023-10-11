@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Warp&display=swap" rel="stylesheet">
     <!-- link del icono -->
-    <link rel="icon" href="../Imagenes/logo.png">
+    <link rel="icon" href="../img/logo.png">
     <!-- LINK DE BOOTSTRAP -->
     <link rel="stylesheet" href="./bootstrap-5.3.2/css/bootstrap.min.css">
 
@@ -21,7 +21,7 @@
     <!-- Encabezado y logo -->
     <header>  
         <div class="encabezado">
-            <a href="../index.html"> <img class="logo" src="../imagenes/logo.png" alt="Imagen del logo"> </a>  
+            <a href="../index.html"> <img class="logo" src="../img/logo.png" alt="Imagen del logo"> </a>  
             <h1>Instituto  protón</h1>
         </div>
     </header>
@@ -30,27 +30,91 @@
     <nav class="navbar">
         <ul class="menu">
             <li> <a href="../index.html">Home</a> </li>
-            <li> <a href="../paginas/quienes_somos.html">Quienes Somos</a> </li>
+            <li> <a href="../pages/quienes_somos.html">Quienes Somos</a> </li>
             
             <!-- Menú desplegable -->
             <li> <a href="##">Materias</a> 
                 <ul class="submenu1">
-                    <li> <a href="../paginas/quimica.html">Química</a> </li> 
-                    <li> <a href="../paginas/fisica.html">Física</a> </li>
-                    <li> <a href="../paginas/biologia.html">Biología</a> </li>
-                    <li> <a href="../paginas/biofisica.html">Biofísica</a> </li>
-                    <li> <a href="../paginas/matematica.html">Matemática</a> </li>
-                    <li> <a href="../paginas/sociales.html">Materias Sociales</a> </li>
+                    <li> <a href="../pages/quimica.html">Química</a> </li> 
+                    <li> <a href="../pages/fisica.html">Física</a> </li>
+                    <li> <a href="../pages/biologia.html">Biología</a> </li>
+                    <li> <a href="../pages/biofisica.html">Biofísica</a> </li>
+                    <li> <a href="../pages/matematica.html">Matemática</a> </li>
+                    <li> <a href="../pages/sociales.html">Materias Sociales</a> </li>
                 </ul>
             </li>
             <!-- Fin Menú Desplegable -->
             
-            <li> <a href="../paginas/docentes.html">Docentes</a> </li>
-            <li> <a href="../paginas/reserva.html">Reserva de Clases</a> </li>
-            <li> <a href="../paginas/donde_estamos.html">Donde estamos</a> </li>
-            <li> <a href="../paginas/inicio_sesion.html">Iniciar Sesión</a> </li>
+            <li> <a href="../pages/docentes.html">Docentes</a> </li>
+            <li> <a href="../pages/reserva.html">Reserva de Clases</a> </li>
+            <li> <a href="../pages/donde_estamos.html">Donde estamos</a> </li>
+            <li> <a href="../pages/inicio_sesion.html">Iniciar Sesión</a> </li>
         </ul>        
     </nav>
+
+    <main class="contenedor_reserva">
+        <!-- ENCABEZADO FORMULARIO  -->
+        <div class="encabezado_reserva">
+            <img class="logo2" src="../img/logo.png" alt="">
+            <h2 class="titulo_reserva">Reserva de clases</h2>
+        </div>
+        <!-- INICIO FORM -->
+        <form class="formulario_reserva" action="">
+            <!-- nombre -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre:">
+            </div>
+            <!-- apellido -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido:">
+            </div>
+            <!-- número de teléfono -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Teléfono de contacto:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Teléfono de contacto">
+            </div>
+            <!-- email -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Correo electrónico:</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="E-mail">
+            </div>
+            <!-- CHECKBOX -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Materias:</label>
+            </div><br>
+            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label " for="flexCheckDefault"> Química</label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> Física</label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault"> Biología</label> 
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">Biofísica (exclusivo CBC)</label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">Matemática</label>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">Materias Sociales </label>      
+            </div><br>
+            
+            <!-- SELECT -->
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Horario:</label>
+            </div><br>
+            <select class="form-select form-label mb-3" aria-label="Larges select example">
+                <option selected>Seleccione horario</option>
+                <option value="mañana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select>
+            <br><br><br>
+            <!-- BOTON -->
+            <button type="button" class="btn btn-success container-fuid">Enviar</button>
+        </form> 
+    </main>
 
     <!-- FOOTER -->
     <footer>

@@ -1,7 +1,3 @@
-body {
-    background-color: var(--azul);
-}
-
 /* PALETA DE COLORES: */
 :root {
     --blanco1: #ffff;
@@ -20,7 +16,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url("../imagenes/fondo2.png");
+    background-image: url("../img/fondo2.png");
+    background-color: var(--azul);
 }
 
 header {
@@ -300,7 +297,7 @@ h4 {
 
 footer {
     height: 215px;
-    background-image: url("../imagenes/ola.svg");
+    background-image: url("../img/ola.svg");
     position: relative;
     bottom: 0;
     margin: 10px 5px -10px 5px;
