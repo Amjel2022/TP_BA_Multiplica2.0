@@ -401,8 +401,83 @@ input:hover {
 
 
 
+/* *************************************** */
+/* ---------- MENÚ HAMBURGUESA ----------- */
+/* *************************************** */
+
+.menu_hambur {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    /* líneas de menú hamburguesa "invisibles" (no se muestran con display:none) */
+    display: none;
+    position: relative;
+}
+
+.menu_hambur img {
+    width: 20%;
+    height: auto;
+    
+    flex-direction: column;
+    align-items: center;
+
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menu_hambur {
+        /* que aparezca menú hamburguesa!! */
+        display: flex;
+        position: absolute;
+        background-color: var(--celeste);
+        margin: auto;  
+    }
+
+    .menu_hambur img {
+        margin: 10px 0 0px 5px;  
+    }
+    
+    .menu {
+        background-color: var(--gris);
+        border: 4px solid var(--gris);
+    }
+
+    .navbar ul {
+        position: absolute;
+        flex-direction: column;
+        width: 84%;
+        align-items: flex-start;
+        top: 50px
+        
+        /* transformaciones para que el menú aparezca desde al lado izquierdo   */
+        /* transform: translate(-120%);
+        transition: transform .5s; */
+        
+    }
+
+    .navbar ul li {
+        margin: 10px;
+    }
+
+    .submenu1 li a {
+        display: flex;
+        align-items: center;
+        margin-left: -17px;
+        
+    }
+}
 
 
+/* https://www.youtube.com/watch?v=Z7C6yRHBSpA */
+/* Me quede en el minuto 14min */
+
+/* ***************************** */
+/* SLIDER CONTENIDO */
+/* ***************************** */
+
+.slider {
+    margin-top: 50px;
+
+}
 
 
 /* ************************************ */
