@@ -396,12 +396,6 @@ input:hover {
 }
 
 /* *************************************** */
-/* -------- DISEÑO RESPONSIVE ------------ */
-/* *************************************** */
-
-
-
-/* *************************************** */
 /* ---------- MENÚ HAMBURGUESA ----------- */
 /* *************************************** */
 
@@ -417,23 +411,30 @@ input:hover {
 .menu_hambur img {
     width: 20%;
     height: auto;
-    
     flex-direction: column;
     align-items: center;
-
 }
-/* RESPONSIVE */
+/* *************************************** */
+/* -------- DISEÑO RESPONSIVE ------------ */
+/* *************************************** */
+
+
+/* *************************************** */
+/* ---------- MENÚ HAMBURGUESA ----------- */
+/* *************************************** */
+
 @media (max-width: 768px) {
     .menu_hambur {
         /* que aparezca menú hamburguesa!! */
         display: flex;
         position: absolute;
         background-color: var(--celeste);
-        margin: auto;  
+        padding-bottom: 10px;
+        border-radius: 0 0px 10px 10px;  
     }
 
     .menu_hambur img {
-        margin: 10px 0 0px 5px;  
+        margin: 10px 0 0px 25px;  
     }
     
     .menu {
@@ -444,15 +445,20 @@ input:hover {
     .navbar ul {
         position: absolute;
         flex-direction: column;
-        width: 84%;
+        width: 85%;
         align-items: flex-start;
-        top: 50px
-        
+        top: 45px;
         /* transformaciones para que el menú aparezca desde al lado izquierdo   */
-        /* transform: translate(-120%);
-        transition: transform .5s; */
-        
+        transform: translate(-105%);
+        transition: transform .5s;
+        /* fin transformación */
     }
+
+    /* Nueva clase para hacer visible el menú */
+    .navbar ul.menu_visible {
+        transform: translate(0);
+    }
+    /* fin de nueva clase  */
 
     .navbar ul li {
         margin: 10px;
@@ -464,20 +470,46 @@ input:hover {
         margin-left: -17px;
         
     }
+
+    /* ***************************** */
+    /* SLIDER CONTENIDO */
+    /* ***************************** */
+    /* REVISAR - REVISAR */
+    .slider {
+        
+        margin-top: 60px;
+
+    }
+
+    /* *************************************** */
+    /* ------- HEADER (ENCABEZADO)------------ */
+    /* *************************************** */
+    .logo {
+        width: 120px;
+        height: auto;
+        margin: auto 15px auto 15px;
+    }
+
+    .titulo_reserva {
+        font-size: 40px;
+        margin: auto;
+    }
+
+    .encabezado {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
+
+    /* FIN primer breakpoint */
 }
 
 
-/* https://www.youtube.com/watch?v=Z7C6yRHBSpA */
-/* Me quede en el minuto 14min */
 
-/* ***************************** */
-/* SLIDER CONTENIDO */
-/* ***************************** */
-
-.slider {
-    margin-top: 50px;
-
-}
 
 
 /* ************************************ */
