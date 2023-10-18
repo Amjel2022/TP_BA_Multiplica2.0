@@ -438,8 +438,8 @@ input:hover {
     }
     
     .menu {
-        background-color: var(--gris);
-        border: 4px solid var(--gris);
+        background-color: var(--negro);
+        border: 4px solid var(--negro);
     }
 
     .navbar ul {
@@ -464,13 +464,24 @@ input:hover {
         margin: 10px;
     }
 
-    .submenu1 li a {
+    .submenu1 {
         display: flex;
-        align-items: center;
-        margin-left: -17px;
-        
+        margin: -60px 10px 0 255px;
+        padding-left: -10px;
     }
 
+    .menu li ul {
+        padding-right: 60px;
+    }
+
+    .submenu1 ul li {
+        margin-right: 100px;
+    }
+
+    .submenu1 li a {  
+        margin-left: -15px;
+    }
+    
     /* ***************************** */
     /* SLIDER CONTENIDO */
     /* ***************************** */
