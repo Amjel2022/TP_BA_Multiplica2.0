@@ -133,7 +133,7 @@ main {
 }
 
 .img_home {
-    width: 700px;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -210,7 +210,7 @@ main {
 }
 
 .img_card {
-    width: 320px;
+    width: 95%;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
@@ -219,7 +219,6 @@ main {
     scale: 1.1;
     transition: 1s;
     cursor: pointer;
-    padding-right: 10px;
 }
 
 h3 {
@@ -293,11 +292,12 @@ h3 {
 /* ********************************************* */
 
 /* ******************************************* */
-/*  ----------- FOOTER ----------- */
-/* Para probar, despues con más tiempo se puede mejorar  */
+/*  *****----------- FOOTER -----------******* */
+/* ******************************************  */
 
 footer {
-    height: 215px;
+    width: 100%;
+    height: auto;
     background-image: url("../img/ola.svg");
     position: relative;
     bottom: 0;
@@ -346,9 +346,11 @@ aside {
 }
 
 .img_calendario {
-    width: 350px;
+    width: 90%;
     height: auto;
-    margin: 25px;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 40px;
 }
 
 h4 {
@@ -378,12 +380,12 @@ input:hover {
     margin: 2px 0 0 10px;
     border: 2px solid var(--celeste);
     border-radius: 10px;
-    background-color: var(--blanco2); 
+    background-color: var(--blanco1); 
 }
 
 .btn_buscar:hover {
     border: 3px solid var(--azul_claro);
-    background-color: var(--blanco1);
+    background-color: var(--blanco2);
     cursor: pointer;
 }
 
@@ -392,7 +394,7 @@ input:hover {
     justify-content: flex-start;
     color: var(--azul_claro);
     font-family: Helvetica, sans-serif;
-    margin-left: 30px;
+    margin: 0 0 10px 30px;
     font-size: 20px;
 }
 
@@ -419,12 +421,11 @@ input:hover {
 /* -------- DISEÑO RESPONSIVE ------------ */
 /* *************************************** */
 
+@media (max-width: 768px) {
 
-/* *************************************** */
+    /* *************************************** */
 /* ---------- MENÚ HAMBURGUESA ----------- */
 /* *************************************** */
-
-@media (max-width: 768px) {
     .menu_hambur {
         /* que aparezca menú hamburguesa!! */
         display: flex;
@@ -486,7 +487,7 @@ input:hover {
     /* ***************************** */
     /* SLIDER CONTENIDO */
     /* ***************************** */
-    /* REVISAR - REVISAR */
+    
     .slider {
         width: 80%;
         height: auto;
@@ -534,7 +535,7 @@ input:hover {
     } 
 
     .img_home {
-        width: 350px;
+        width: 95%;
         height: auto;
     }
 
@@ -546,17 +547,24 @@ input:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
     
     .card1, .card2, .card3, .card4, .card5, .card6 {
+        width: 95%;
         margin: 30px 0 20px 0;
     }
     
     .img_card {
         margin-right: 10px;
     }
-   
+    
+    /* *************************************** */
+    /* ---------------- FOOTER  -------------- */
+    /* *************************************** */
+
+    h5 {
+        font-size: 30px;
+    }
 
     /* FIN primer breakpoint */
 }
