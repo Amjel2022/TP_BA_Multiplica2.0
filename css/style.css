@@ -48,6 +48,15 @@ h1 {
     margin-left: 40px;
 }
 
+.titulo_home {
+    color: var(--azul);
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 35px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -174,7 +183,7 @@ main {
     padding: 8px 10px 8px 10px;
     border: 3px solid var(--azul);
     border-radius: 20px;
-    background: var(--blanco2);
+    background: var(--blanco1);
 }
 
 .btn1 a {
@@ -367,6 +376,7 @@ input {
     border-radius: 10px;
     margin: 0 0 10px 30px;
     padding: 8px 50px 8px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input:hover {
@@ -561,6 +571,10 @@ input:hover {
     /* *************************************** */
     /* ---------------- FOOTER  -------------- */
     /* *************************************** */
+    footer {
+        width: 95%;
+        height: auto;
+    }
 
     h5 {
         font-size: 30px;
@@ -569,10 +583,11 @@ input:hover {
     /* FIN primer breakpoint */
 }
 
+/* breakpoint 2 */
+/* EN PROCESO... */
 
 
-
-
+/* *************************************************************************** */
 /* ************************************ */
 /* ------- PAGINA DE RESERVAS --------- */
 /* ************************************ */
@@ -590,10 +605,13 @@ input:hover {
     display: flex;  
     justify-content: center;
     align-items: center;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 35px;
+    margin-left: -5px;
 }
 
 .contenedor_reserva {
-    width: 40%;
+    width: 30%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -602,7 +620,7 @@ input:hover {
     border-radius: 10px;
     background-color: var(--blanco2);
     margin: 25px auto 25px auto;
-    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .encabezado_reserva {
@@ -611,3 +629,94 @@ input:hover {
     align-items: center;
     padding-bottom: 15px;
 }
+
+label {
+    margin-right: -10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+
+}
+
+.checkbox1, .checkbox2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 5px auto 5px auto;
+}
+
+select {
+    border: 2px solid var(--celeste);
+    border-radius: 10px;
+    margin: 10px 0 10px 30px;
+    padding: 8px 50px 8px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+select:hover {
+    border: 3px solid var(--azul_claro);
+    cursor: pointer;
+}
+
+/* ************* BOTÓN DE RESERVA ************** */
+/* ********************************************* */
+/* (centrado) */
+.btn {
+    display: flex;
+    justify-content: center;
+}
+/* características del btn */
+.btn_reserva {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    border: 3px solid var(--azul);
+    border-radius: 20px;
+    background: var(--blanco1);
+}
+
+.btn_reserva a {
+    color: var(--azul);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.btn_reserva:hover {
+    background: var(--azul);
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+.btn_reserva a:hover {
+    color: var(--blanco2);
+    font-weight: bolder;
+}
+/* Fin btn_reserva */
+
+.comentarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.comentarios textarea {
+    border-radius: 10px;
+}
+
+/* *************************************** */
+/* -------- DISEÑO RESPONSIVE ------------ */
+/* *************************************** */
+
+@media (max-width: 768px) {
+
+
+
+
+
+    
+}
+
