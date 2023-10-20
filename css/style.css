@@ -611,7 +611,7 @@ input:hover {
 }
 
 .contenedor_reserva {
-    width: 30%;
+    width: 35%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -630,23 +630,33 @@ input:hover {
     padding-bottom: 15px;
 }
 
-label {
-    margin-right: -10px;
+label, input {
+    margin-bottom: 10px;
+    margin-right: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
-
 }
 
-.checkbox1, .checkbox2 {
+input:hover {
+    cursor: pointer;
+}
+
+.checkbox1 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: baseline;
     margin: 5px auto 5px auto;
 }
 
+.item_materia {
+    display: flex;
+    justify-content: space-between;
+}
+
 select {
     border: 2px solid var(--celeste);
+    background-color: var(--blanco1);
     border-radius: 10px;
     margin: 10px 0 10px 30px;
     padding: 8px 50px 8px 8px;
@@ -712,8 +722,35 @@ select:hover {
 /* *************************************** */
 
 @media (max-width: 768px) {
+    .contenedor_reserva {
+        width: 75%;
+        height: auto;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        
+    }
 
+    .label_reserva {
+        padding: 5px 5px 15px 5px;
+    }
 
+    .input_reserva {
+        margin-top: 10px;
+    }
+
+    .titulo_reserva {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .checkbox1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
 
 
 

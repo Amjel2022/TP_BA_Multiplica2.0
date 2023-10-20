@@ -68,55 +68,62 @@
         <!-- INICIO FORM -->
         <form class="formulario_reserva" action="">
             <!-- nombre -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput" class="form-label">✔️ Nombre:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre:">
+            <div class="nombre">
+                <label class="label_reserva">✔️ Nombre:</label>
+                <input type="text" class="input_reserva" placeholder="Ingrese su nombre:">
             </div>
             <!-- apellido -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">✔️ Apellido:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido:">
+            <div class="apellido">
+                <label class="label_reserva">✔️ Apellido:</label>
+                <input type="text" class="input_reserva" placeholder="Apellido:">
             </div>
             <!-- número de teléfono -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">✔️ Teléfono de contacto:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Teléfono de contacto">
+            <div class="telefono">
+                <label class="label_reserva">✔️ Teléfono de contacto:</label>
+                <input type="text" class="input_reserva" placeholder="Teléfono de contacto">
             </div>
             <!-- email -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">✔️ Correo electrónico:</label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="E-mail">
+            <div class="correo">
+                <label class="label_reserva">✔️ Correo electrónico:</label>
+                <input type="text" class="input_reserva" placeholder="E-mail">
             </div>
             <!-- CHECKBOX -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">✔️ Materias:</label>
-            </div><br>
+            <div class="materias">
+                <label class="label_reserva">✔️ Materias:</label>
+            </div>
             
-            <div class="form-check">
-                <div class="checkbox1">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label " for="flexCheckDefault"> Química</label>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault"> Física</label>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault"> Biología</label>
+            <div class="checkbox1">
+                <div class="item_materia">
+                    <input type="checkbox" value="Química">
+                    <label>Química</label>
                 </div>
-                <br> 
-                <div class="checkbox2">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked"> Biofísica (exclusivo CBC)</label>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked"> Matemática</label>
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked"> Materias Sociales </label>
-                </div>      
-            </div><br>
+                <div class="item_materia">
+                    <input type="checkbox" value="Física">
+                    <label>Física</label>
+                </div>
+                <div class="item_materia">
+                    <input type="checkbox" value="Biología">
+                    <label>Biología</label>
+                </div>
+                <div class="item_materia">
+                    <input type="checkbox" value="Biofísica">
+                    <label>Biofísica (exclusivo CBC)</label>
+                </div>
+                <div class="item_materia">
+                    <input type="checkbox" value="Matemática">
+                    <label>Matemática</label>
+                </div>
+                <div class="item_materia">
+                    <input type="checkbox" value="Materias Sociales">
+                    <label>Materias Sociales</label>
+                </div>    
+            </div>      
             
             <!-- SELECT -->
-            <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">✔️ Horario:</label>
+            <div class="horario">
+                <label class="label_reserva">✔️ Horario:</label>
             </div>
-            <select class="form-select form-label mb-3" aria-label="Larges select example">
+            <select >
                 <option selected>Seleccione horario</option>
                 <option value="mañana">Mañana de 9 a 12 horas</option>
                 <option value="tarde">Tarde de 13 a 16 horas</option>
@@ -126,10 +133,10 @@
             
             <!-- texarea -->
             <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">✔️ Comentarios:</label> <br>     
+                <label class="label_reserva">✔️ Comentarios:</label> <br>     
             </div>
             <div class="comentarios">    
-                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                <textarea name="comentario" id="comentario" cols="40" rows="10" placeholder="Ingrese su comentario, duda o consulta."></textarea>
             </div>
 
             <!-- BOTON -->
