@@ -4,4 +4,10 @@ Hola Buenos días, tardes o noches dependoiendo de la hora en que me corrija el 
 2. La página la arranque desde cero y también la subí a mi cuenta de GitHub desde el inicio de todo, le dejo el link: https://github.com/Amjel2022/TP_BA_Multiplica2.0.git
 3. El sketch lo dibuje y anexe al trabajo en un archivo aparte de los archivos del proyecto.
 4. Espero poder agregar formularios y demás elementos a esta página en un futuro, desde ya agradecré cualquier corrección que pueda hacerme. Muchas gracias por la dedicación que le pone a cada clase y por los archivos que nos sube al aula virtual, los descargué todos y los revisé también. Saludos cordiales.
+
+SEGUNDA ENTREGA: 
+Hola profesora le hago la segunda entrega del TP, a continuación dejaré los links solicitados:
+Link al deploy: https://amjel2022.github.io/TP_BA_Multiplica2.0/
+Link al repositorio de GitHub: https://github.com/Amjel2022/TP_BA_Multiplica2.0.git
+
  
