@@ -616,6 +616,7 @@ input:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 40px;
     border-radius: 10px;
     background-color: var(--blanco2);
@@ -750,10 +751,45 @@ select:hover {
         flex-direction: column;
         justify-content: space-between;
         padding-top: 10px;
-    }
-
-
-
-    
+    }   
 }
+/* analizar un segundo breakpoint */
+
+/* *************************************************************************** */
+/* ************************************ */
+/* ------- PAGINA DONDE ESTAMOS --------- */
+/* ************************************ */
+
+.cajita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Tilt Warp', cursive;
+    border: 4px solid var(--celeste);
+    padding: 20px 30px 20px 30px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    background-color: var(--celeste);
+    color: var(--blanco2);
+}
+
+.mapa img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 30px auto;
+}
+
+/* *************************************************************************** */
+/* ************************************ */
+/* ------- PAGINA INICIAR SESIÓN --------- */
+/* ************************************ */
+
 
