@@ -800,17 +800,49 @@ select:hover {
 /* ************************************ */
 /* MATERIA QUÍMICA */
 
-.tabla_materia {
-    width: 50%;
+/* Sección Inicial */
+.inicio_materia {
+    width: 70%;
     height: auto;
+    background-color: var(--blanco2);
+    margin: 20px auto 40px auto;
+    border-radius: 10px;
+}
+
+.titulo_materia_inicio {
+    color: var(--azul);
+    font-family: 'Tilt Warp', cursive;
+    font-size: 40px;
+    margin: 30px auto 20px 40px;
+}
+
+/* ESTILOS DE TABLA  */
+/* ***************************************************** */
+
+.tabla_materia {
+    width: 70%;
+    height: auto;
+    background-color: var(--blanco2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.tabla_materia1 {
+    width: 70%;
+    padding-bottom: 40px;
 }
 
 table {
-    width: 50%;
+    width: 100%;
     text-align: center;
     background-color: var(--blanco2);
     border-collapse: collapse;
     border-radius: 10px;
+    margin: auto;    
 }
 
 th, td {
@@ -836,6 +868,33 @@ tr:hover td {
     color: var(--blanco2);
 }
 
-.titulo_materia {
-
+.titulo_tabla {
+    color: var(--azul);
+    font-family: 'Tilt Warp', cursive;
+    font-size: 40px;
 }
+
+/* FIN ESTILOS DE TABLA ---------- */
+/* *********************************************************** */
+
+/* Sección final: Virtual */
+.virtual_materia {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    background-color: var(--blanco2);
+    border-radius: 10px;
+    margin: 40px auto 40px auto;
+    padding-bottom: 40px;
+}
+
+.titulo_materia_virtual {
+    color: var(--azul);
+    font-family: 'Tilt Warp', cursive;
+    font-size: 40px;
+    margin: 30px auto 20px 40px;
+}
+
