@@ -567,6 +567,10 @@ input:hover {
         margin-right: 10px;
     }
     
+    .buscador input {
+        padding: 4px;
+    }
+    
     /* *************************************** */
     /* ---------------- FOOTER  -------------- */
     /* *************************************** */
@@ -578,6 +582,8 @@ input:hover {
     h5 {
         font-size: 30px;
     }
+
+    
 
     /* FIN primer breakpoint */
 }
