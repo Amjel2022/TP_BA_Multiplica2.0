@@ -309,8 +309,7 @@ footer {
     height: auto;
     background-image: url("../img/ola.svg");
     position: relative;
-    bottom: 0;
-    margin: 10px 5px -10px 5px;
+    margin: auto auto -10px auto; 
     border-radius: 10px 10px 0 0;
 }
 
@@ -792,4 +791,51 @@ select:hover {
 /* ------- PAGINA INICIAR SESIÓN --------- */
 /* ************************************ */
 
+/* Se hizo con las mismas clases de  */
 
+
+/* *************************************************************************** */
+/* ************************************ */
+/* ------- PAGINA DE MATERIAS --------- */
+/* ************************************ */
+/* MATERIA QUÍMICA */
+
+.tabla_materia {
+    width: 50%;
+    height: auto;
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    background-color: var(--blanco2);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 20px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+
+thead {
+    background-color: var(--celeste);
+    color: var(--blanco2);
+    border-bottom: 5px solid var(--azul_claro);
+    font-size: 20px;   
+    font-family: Helvetica, sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: var(--gris);
+}
+
+tr:hover td {
+    background-color: var(--azul_claro);
+    color: var(--blanco2);
+}
+
+.titulo_materia {
+
+}
