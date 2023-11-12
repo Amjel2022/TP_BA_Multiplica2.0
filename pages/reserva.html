@@ -64,27 +64,23 @@
             </div>
             
             <!-- INICIO FORM -->
-            <form class="formulario_reserva" action="">
+            <form class="formulario_reserva" action="" id="form">
                 <!-- nombre -->
-                <div class="nombre">
-                    <label class="label_reserva">✔️ Nombre:</label>
-                    <input type="text" class="input_reserva" placeholder="Ingrese su nombre:">
-                </div>
+                <label for="nombre" class="label_reserva">✔️ Nombre:</label>
+                <input type="text" name="nombre" id="nombre" class="input_reserva" placeholder="Ingrese su nombre:" required>
+                
                 <!-- apellido -->
-                <div class="apellido">
-                    <label class="label_reserva">✔️ Apellido:</label>
-                    <input type="text" class="input_reserva" placeholder="Apellido:">
-                </div>
+                <label for="apellido" class="label_reserva">✔️ Apellido:</label>
+                <input type="text" name="apellido" id="apellido" class="input_reserva" placeholder="Ingrese su apellido:" required>
+                
                 <!-- número de teléfono -->
-                <div class="telefono">
-                    <label class="label_reserva">✔️ Teléfono de contacto:</label>
-                    <input type="text" class="input_reserva" placeholder="Teléfono de contacto">
-                </div>
+                <label for="telefono" class="label_reserva">✔️ Teléfono de contacto:</label>
+                <input type="text" name="telefono" id="telefono" class="input_reserva" placeholder="Teléfono de contacto" required>
+                
                 <!-- email -->
-                <div class="correo">
-                    <label class="label_reserva">✔️ Correo electrónico:</label>
-                    <input type="text" class="input_reserva" placeholder="E-mail">
-                </div>
+                <label for="email" class="label_reserva">✔️ Correo electrónico:</label>
+                <input type="email" name="email" id="email" class="input_reserva" placeholder="E-mail" required>
+                
                 <!-- CHECKBOX -->
                 <div class="materias">
                     <label class="label_reserva">✔️ Materias:</label>
@@ -130,7 +126,7 @@
                 <br>
                 
                 <!-- texarea -->
-                <div class="mb-3">
+                <div class="texarea"> 
                     <label class="label_reserva">✔️ Comentarios:</label> <br>     
                 </div>
                 <div class="comentarios">    
@@ -138,10 +134,9 @@
                 </div>
 
                 <!-- BOTON -->
-                <div class="btn">
-                    <button class="btn_reserva"> <a href="##">Enviar</a> </button>
-                </div>    
+                <input type="submit" id="submit" class="btn_reserva" value="Enviar">    
             </form> 
+            
         </main>
 
         <!-- FOOTER -->
@@ -159,5 +154,6 @@
         <!-- ************ JS MENÚ HAMBURGUESA ********** -->
         <script src="../js/menu_hambur.js" ></script>
         <!-- ******************************************* -->
+        <script src="../js/reserva.js" ></script>
     </body>
 </html>
