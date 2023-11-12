@@ -211,6 +211,7 @@ main {
     background-color: rgb(220, 66, 66);
     padding: 40px;
     border-radius: 15px;
+    text-align: center;
 }
 
 /* ------------- CARDS --------------- */

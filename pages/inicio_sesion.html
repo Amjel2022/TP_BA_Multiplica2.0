@@ -69,12 +69,12 @@
                     <!-- nombre -->
                     <div class="nombre">
                         <label class="label_reserva">✔️ Usuario:</label>
-                        <input type="text" class="input_reserva" placeholder="Ingrese su usuario:">
+                        <input type="text" class="input_reserva" placeholder="Ingrese usuario" required>
                     </div>    
                     <!-- contraseña -->
                     <div class="contraseña">
                         <label class="label_reserva">✔️ Contraseña:</label>
-                        <input type="password" class="input_reserva" placeholder="Contraseña:">
+                        <input type="password" class="input_reserva" placeholder="Contraseña" required>
                     </div>
                     <!-- SELECT -->
                     <div class="tipo_usuario">
@@ -86,10 +86,10 @@
                         <option value="docente">Docente</option>
                         <option value="estudiante">Estudiante</option>
                     </select>
+                    
                     <!-- BOTON -->
-                    <div class="btn">
-                        <button class="btn_reserva"> <a href="##">Ingresar</a> </button>
-                    </div> 
+                    <input class="btn_reserva" type="submit" id="submit" value="Ingresar">
+                     
                 </form>
             </div>
         </main>

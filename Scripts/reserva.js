@@ -1,8 +1,12 @@
-const   $submit = document.getElementById('submit'),
-        $nombre = document.getElementById('nombre'),
-        $apellido = document.getElementById('apellido'),
-        $telefono = document.getElementById('telefono'),
-        $email = document.getElementById('email');
+const submit = document.getElementById('submit');
+
+const nombre = document.getElementById('nombre');
+
+const apellido = document.getElementById('apellido');
+
+const telefono = document.getElementById('telefono');
+
+const email = document.getElementById('email');
     
 
 //Función:
@@ -18,16 +22,16 @@ function validateInputs() {
         const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
 
         //Alertas de los campos
-        if ($nombre.value === "") {
+        if (nombre.value === "") {
             alert("Completar el nombre.");
         }
-        if ($apellido.value === "") {
+        if (apellido.value === "") {
             alert("Completar el apellido.");
         }
-        if ($telefono.value === "") {
+        if (telefono.value === "") {
             alert("Completar el telefono.");
         }
-        if ($email.value === "") {
+        if (email.value === "") {
             alert("Completar el email.");
         }
 
