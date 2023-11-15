@@ -58,13 +58,32 @@
 
         <!-- Cuerpo Principal -->
         <main>
-            <!-- SLIDER PRINCIPAL -->
-            <section class="slider">
-                <img class="img_home" src="./img/home1.png" alt="Imagen dictando clases.">
+            <!-- CAROUSEL PRINCIPAL -->
+            <section class="image-slider" >
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img class="img_home" src="./img/home1.png" alt="Imagen 1">    
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/fisica.png" alt="Imagen 2">
+                    </div> 
+                    <div class="carousel-slide">
+                        <img src="img/biologia.png" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/qimMateria.png" alt="Imagen 4">
+                    </div>
+                </div>
+                <button id="prevButton">&lsaquo;</button>
+                <button id="nextButton">&rsaquo;</button>
+            </section>    
+            
+            <!-- TEXTO AL LADO DEL CAROUSEL -->
+            <section class="slider-texto1">    
                 <div class="texto1">
                     <h2 class="titulo_slider">Instituto protón</h2>
                     <p>Vení a estudiar con nosostros, dictamos todas las materias en todos los niveles con profesores especializados con años de experiencia.</p>
-                    <button class="btn1"> <a href="./pages/reserva.html">Reservar Clase ✅</a> </button>
+                    <button class="btn1"> <a href="pages/reserva.html">Reservar Clase ✅</a> </button>
                 </div>    
             </section>
             
@@ -159,12 +178,15 @@
             </div>
             <p class="copyright">Copyright &copy; Angeloz Diseño 2023</p>
         </footer>
-        
+        <script src="Scripts/carousel.js" ></script>
         <!-- **************JS PARPADEAR **************** -->
         <script src="Scripts/parpadear.js"></script>
         <!-- ************ JS MENÚ HAMBURGUESA ********** -->
         <script src="Scripts/menu_hambur.js"></script>
         <!-- ******************************************* -->
         <script src="Scripts/reserva.js"></script>
+        <!-- ******************************************* -->
+        
+
     </body>
 </html>

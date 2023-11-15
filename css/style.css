@@ -147,7 +147,7 @@ main {
     border-radius: 8px;
 }
 
-.slider {
+.slider-texto1 {
     display: flex;
     justify-content: center;
     width: 85%;
@@ -201,6 +201,31 @@ main {
     color: var(--blanco2);
     font-weight: bolder;
 }
+
+/* ******* CAROUSEL ******************* */
+/* ************************************ */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* ------- TEXTO QUE PARPADEA -------- */
 /* *********************************** */
