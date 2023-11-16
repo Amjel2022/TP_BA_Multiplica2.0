@@ -27,5 +27,22 @@ Le hago las siguientes observaciones acerca de mi proyecto y también quería co
 
 Entonces sin más que agregar, creo que cumplo con todos los requisitos de la entrega, pero espero cualquier corrección que me pueda hacer. Gracias profe por la paciencia y dedicación. Saludos cordiales. 
 
+TERCERA ENTREGA:
+
+Hola profe tengo algunas dudas con JS en esta entrega, se las detallo a continuación a ver si me puede ayudar un poco con eso:
+
+1. Intenté hacer un carousel como usted hizo en clase y no me salió está muy parecido y por más que reviso no puedo detectar el error.
+
+2. También intenté hacer un formulario con validación de tal manera que cuando un campo no esté completo o se complete incorrectamente el input cambie de color a rojo y se muestre un alert en ese sentido, pero no lo logro hacer. Quizá hay algo de la lógica en JS que estoy haciendo mal o no sé, ya me cansé de revisarlo y debería funcionar pero es como si no me leyera el archivo JS. 
+
+3. Agregué un icono de whats app para que cuando le de click me habra la aplicación con un mensaje precargo en el campo de mensajes del chat. Esto lo busqué en internet y había una forma simple de hacerlo usando enlaces externos. Lo he probado varias veces y funciona.
+
+4. Agregué en la HOME una función de un texto que parpadea a manera de oferta en la página, esa función en JS si me salió bien, el texto parpadea y la velocidad la puedo ajustar en la función.  
+
+Bueno profe espero me pueda ayudar con las dudas que tengo, espero no esté tan mal el trabajo que estoy entregando. 
+Saludos y gracias.
+
+
+
 
  
